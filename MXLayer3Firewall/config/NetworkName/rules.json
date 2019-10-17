@@ -1,0 +1,32 @@
+[
+    {
+        "comment": "Specific Network Rule 1",
+        "policy": "deny",
+        "protocol": "tcp",
+        "srcPort": "21-22",
+        "srcCidr": "10.58.225.0/24",
+        "destPort": "any",
+        "destCidr": "any",
+        "syslogEnabled": false
+    },
+    {
+        "Comment" : "Specific Network Rule 2",
+        "policy": "deny",
+        "protocol": "tcp",
+        "srcPort": "1492",
+        "srcCidr": "10.58.225.0/24",
+        "destPort": "any",
+        "destCidr": "any",
+        "syslogEnabled": false
+    },
+    {
+        "Comment" : "Specific Network Rule 3",
+        "policy": "deny",
+        "protocol": "tcp",
+        "srcPort": "1436",
+        "srcCidr": "10.58.225.0/24",
+        "destPort": "any",
+        "destCidr": "any",
+        "syslogEnabled": false
+    }
+]

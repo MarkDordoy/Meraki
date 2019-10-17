@@ -1,0 +1,22 @@
+[
+    {
+      "comment": "BLOCK EXT IP",
+      "protocol": "any",
+      "destCidr": "149.210.145.165/32",
+      "syslogEnabled": true,
+      "srcPort": "any",
+      "srcCidr": "Any",
+      "policy": "deny",
+      "destPort": "Any"
+    },
+    {
+      "comment": "BLOCK EXT IP",
+      "protocol": "any",
+      "destCidr": "62.109.26.208/32",
+      "syslogEnabled": true,
+      "srcPort": "Any",
+      "srcCidr": "Any",
+      "policy": "deny",
+      "destPort": "Any"
+    }
+  ]

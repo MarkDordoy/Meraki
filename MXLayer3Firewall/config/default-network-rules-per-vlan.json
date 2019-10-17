@@ -1,0 +1,32 @@
+[
+  {
+    "comment": "Meraki cloud communication",
+    "protocol": "udp",
+    "destCidr": "185.17.255.128/25,50.115.86.96/27,185.92.120.0/25,217.89.128.0/24,199.231.78.0/24,108.161.147.0/24,64.62.142.12/32,54.193.207.248/32,209.206.48.0/20",
+    "syslogEnabled": true,
+    "srcPort": "Any",
+    "srcVlanName": "CLOUD-MGT",
+    "policy": "allow",
+    "destPort": "7351"
+  },
+  {
+    "comment": "VPN registry",
+    "protocol": "udp",
+    "destCidr": "199.231.78.0/24,64.156.192.245/32,217.89.128.0/24,185.17.255.128/25,50.115.86.96/27,185.92.120.0/25,209.206.48.0/20",
+    "syslogEnabled": true,
+    "srcPort": "Any",
+    "srcVlanName": "CLOUD-MGT",
+    "policy": "allow",
+    "destPort": "9350"
+  },
+  {
+    "comment": "Backup configuration downloads, Backup firmware downloads, Splash pages, URL logging",
+    "protocol": "tcp",
+    "destCidr": "50.115.86.96/27,54.193.207.248/32,185.17.255.128/25,185.92.120.0/25,209.206.48.0/20,217.89.128.0/24,64.62.142.2/32,185.17.255.128/25,199.231.78.0/24",
+    "syslogEnabled": true,
+    "srcPort": "Any",
+    "srcVlanName": "CLOUD-MGT",
+    "policy": "allow",
+    "destPort": "80,443,6514,7734,7752"
+  }
+]
