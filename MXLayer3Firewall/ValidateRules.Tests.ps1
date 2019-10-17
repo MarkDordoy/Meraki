@@ -5,7 +5,7 @@ if(-not(get-module -ListAvailable -Name Pester))
     Install-Module -Name Pester -Force -RequiredVersion 4.9.0
 }
 
-$AllowedVlanNames = @("DATA","VOICE","GUEST_WIRED","CLOUD-MGT","CKNMOBILE","CKNGUEST")
+$AllowedVlanNames = @("DATA","VOICE","GUEST_WIRED","CLOUD-MGT","MOBILE","GUEST")
 . $PSScriptRoot\helpers.ps1
 $defaultAnySourceRules = (Get-Content -Path '.\config\default-any-source-rules.json' -Raw) | ConvertFrom-Json
 $defaultNetworkRulesPerVlan = (Get-Content -Path '.\config\default-network-rules-per-vlan.json' -Raw) | ConvertFrom-Json
